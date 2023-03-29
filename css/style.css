@@ -28,6 +28,7 @@ body{
   border: 2px solid black;
   width: calc(100% / 10);
   aspect-ratio: 1/1;
+  cursor: pointer;
 }
 
 button{
@@ -36,13 +37,17 @@ button{
   aspect-ratio: 1/1;
   font-size: 3.5rem;
   cursor: pointer;
-  background-color: red;
+  background-color: rgb(202, 20, 20);
   color: white;
   border-radius: 50%;
   border: none;
 }
 
 button:hover{
-  color: red;
-  background-color: white;
+  
+  background-color: red;
+}
+
+.square.click{
+  background-color: yellow;
 }

@@ -8,9 +8,12 @@ const difficolta = document.getElementById("difficolta")
 console.log(container, start)
 
 // BOTTONE
-start.addEventListener("click" ,function(){
+start.addEventListener("click" ,play);
   
+  function play(){
+    reset();
 
+  
   for(let i = 1; i <= difficolta.value; i++){
     const quadrato = generateSquare();
     console.log(quadrato)
@@ -32,7 +35,7 @@ start.addEventListener("click" ,function(){
       
     })
   }
-
+}
     
   
 
@@ -42,6 +45,8 @@ start.addEventListener("click" ,function(){
     return generareQuadrato;
   }
 
-})
+  function reset(){
+    container.innerHTML = "";
+  }
 
 
